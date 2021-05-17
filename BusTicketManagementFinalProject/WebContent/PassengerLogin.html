@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login Page</title>
+<link rel="stylesheet" type="text/css" href="./resources/css/passengerlogin.css">
+<script>  
+function validateform()
+{  
+var name=document.myform.uname.value;  
+var password=document.myform.pwd.value;  
+  
+if (name=="")
+{  
+  alert("Username can't be blank");  
+  return false;  
+}
+else if(password=="")
+{  
+  alert("Password can't be blank'");  
+  return false;  
+}  
+}  
+</script>  
+
+</head>
+<body>
+<div class="loginbox">
+<img src="C:\Users\ROHINI GAUD\workspace\BusTicketManagement\WebContent\resources\image\avatar.png" class="avatar"> 
+<h1>Passenger Login Here</h1>
+<form action="passengerlogin" form name="myform" method="Post" onsubmit="return validateform()">
+<p>Username</p>
+<input type="text" name="uname" placeholder="Enter Username">
+<p>Password</p>
+<input type="password" name="pwd" placeholder="Enter Password"><br><br>
+<input type="submit" value="login">
+</form>
+</body>
+</html>
+
+
+
+

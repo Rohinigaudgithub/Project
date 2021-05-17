@@ -1,0 +1,184 @@
+@CHARSET "ISO-8859-1";
+* {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+.banner {
+	height: 100vh;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.75),
+		rgba(0, 0, 0, 0.75)), url(../image/bus.jpg);
+	background-position: center;
+	background-size: cover;
+}
+.nav-links {
+	flex : 1;
+}
+.nav-links ul{
+	
+	margin-left: 50%;
+	display: inline;
+	
+}
+.nav-links ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 8px 25px;
+  margin-top: 40px;	
+}
+
+.nav-links ul button{
+	
+	 cursor: pointer;
+     background-color: transparent;
+     size: 15px;
+     background-size: auto;
+     height: 90px;
+     width: 250px;
+     
+     color: #fff;
+     font-size: 1.5em;
+     box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+}
+nav-links ul button a{
+	
+	color: #fff;
+	text-decoration: none;
+	font-size:20px;
+	font-weight: bold;
+}
+.nav-links ul li::after{
+	
+	content:'';
+	width:0;
+	height:2px;
+	background:yellow;
+	display: block;
+	margin: auto;
+	transition: .5s;
+}
+.nav-links ul li:hover::after{
+	width:100%;
+}
+
+
+.btn {
+	padding: 10px 20px;
+	border: 0;
+	background: yellow;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.banner-title {
+	margin: 100px 80px;
+	color: #fff;
+}
+
+.banner-title h1 {
+	margin-bottom: 30px;
+	font-size: 64px;
+}
+
+.banner-title h1 span {
+	color: green;
+}
+
+<!-- AdminLoginCSS -->
+
+body{
+	margin: 0;
+	padding: 0;
+	background: linear-gradient(rgba(0, 0, 0, 0.50),
+		rgba(0, 0, 0, 0.50)), url(../image/p1.jpg);
+	background-size: 100%;
+	background-position: auto 50px;
+	font-family: sans-serif;
+	background-color:red;
+}
+.loginbox{
+	width: 320px;
+	height: 420px;
+	background: #000;
+	color: #fff;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+	padding: 70px 30px;
+}
+.avatar{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	position: absolute;
+	top: -50px;  
+	left: calc(50% - 50px);
+	
+}
+h2{
+	margin: 0;
+	padding: 0 0 20px;
+	text-align: center;
+	font-size: 22px;
+}
+.loginbox p{
+	margin: 5;
+	padding: 0;
+	font-weight: bold;
+}
+
+.loginbox input{
+	width: 100%;
+	margin-botton: 20px;	
+}
+
+.loginbox input[type="text"], input[type="password"]
+{
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #fff;
+	font-size: 16px;
+}
+.loginbox input[type="submit"]
+{
+	border: none;
+	outline: none;
+	height: 40px;
+	background: #fb2525;
+	color: #fff;
+	font-size: 18px;
+	border-radius: 20px;
+}
+.loginbox input[type="submit"]:hover
+{
+	
+	cursor: pointer;
+	background: #ffc107;
+	color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

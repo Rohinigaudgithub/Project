@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Home Page</title>
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+	
+	
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <link rel="stylesheet" href="./resources/css/Index.css">
+</head>
+<body>
+
+<div class="banner" id="welcome">
+		<div class="nav-bar">
+			<div class="nav-links">
+				<ul>
+					
+					<button id="adminbtn"><li>Admin Login</li></button>
+					
+					<button><a href="PassengerLogin.html"><li>Passenger Login</li></a></button>
+					<button><a href="Registration.html"><li>Registration</li></a></button>
+				</ul>
+			</div>
+		</div>
+		<div class="banner-title">
+			<h1>
+				Welcome <span>To </br> Bus Ticket Management
+				</span>
+			</h1>
+			<button type="button" class="btn">TRAVEL</button>
+
+
+		</div>	
+	</div>
+	
+<!-- Admin Login -->
+
+<div class="container">
+<div class="loginbox" id="login">
+<img src="C:\Users\ROHINI GAUD\workspace\BusTicketManagement\WebContent\resources\image\avatar.png" alt="Avatar" class="avatar">
+<h2>Admin Login Here</h2>
+<form action="login" method="Post">
+<p>Username</p>
+<input type="text" name="uname" placeholder="Enter Username" required>
+<p>Password</p>
+<input type="password" name="pwd" placeholder="Enter Password" required><br><br>
+<input type="submit" value="login">
+</form>
+</div>
+</div>
+
+
+
+<!-- JQuery -->
+ 
+ <script>
+    
+    $(document).ready(function(){
+            $('#login').hide();
+            $('#welcome').show();      
+                      });
+        
+       $('#adminbtn').click(function(){
+           $('#welcome').hide();
+           $('#login').show();
+       });
+        
+        
+    </script>
+
+
+</body>
+</html>
